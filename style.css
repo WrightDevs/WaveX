@@ -24,7 +24,9 @@ nav a {
   font-weight: 500;
   color: #333;
 }
-
+.navbar{
+  position: fixed;
+}
 .img1 {
   width: 100%; /* Set to 100% to avoid width issues */
   max-width: 80%; /* Limit max width for spacing */
@@ -121,4 +123,145 @@ h3 {
 
 .about-section .btn-primary:hover {
   background-color: #1f24a1;
+}
+#GIT{
+  display: grid;
+  align-items: center ;
+  justify-content: center;
+  transform: translateX(6em);
+  width:40%;
+}
+.testimonial-section {
+  background-color: #f9f9f9;
+}
+
+.testimonial-section h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-section .card {
+  border: none;
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+.testimonial-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial-section .card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.testimonial-section .card-body {
+  padding: 20px;
+}
+
+.testimonial-section .rounded-circle {
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .testimonial-section .card {
+    margin-bottom: 30px;
+  }
+}
+
+/**footer {
+  background-color: #343a40;
+  color: #fff;
+  font-family: 'Arial', sans-serif; /* Use a modern font
+}
+
+footer h5 {
+  font-size: 1.3rem; 
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 5px;
+}
+
+footer p, footer ul {
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff;
+  transition: color 0.3s ease; 
+}
+
+footer a:hover {
+  color: #00aced; 
+  text-decoration: underline;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease; 
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); 
+}
+h5,h3,h4{
+  text-align: center;
+}
+**/
+
+
+
+/* Footer container */
+footer {
+  background-color: #F9ECEC38;
+  color: black;
+  padding: 40px 20px;
+  text-align: center;
+  width:100%;
+}
+
+/* Footer Image */
+#footerImage {
+  display: block;
+  margin: 30px auto; /* This centers the image */
+  max-width: 150px;
+}
+
+/* Footer links section */
+#footer-links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 30px;
+  list-style: none;
+  flex-wrap: wrap; /* This ensures they wrap if screen space is small */
+}
+
+#footer-links ul li {
+  margin: 0 15px;
+}
+
+/* Footer links styling */
+#footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover effect for footer links */
+#footer-links a:hover {
+  color: #3498db;
+}
+
+/* Ensure the footer links stay horizontal even on smaller screens */
+@media (max-width: 768px) {
+  #footer-links ul {
+    justify-content: space-evenly; /* Even spacing across smaller screens */
+  }
+  
+  #footer-links ul li {
+    margin: 10px;
+  }
 }
